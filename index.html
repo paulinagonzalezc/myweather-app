@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="src/style.css">
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/241146ce0a.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+</br>
+<div class="container">
+    <div class="row">
+        <i type="button" class="col-7 fas fa-bars bars"></i>
+        <form class="form-inline" id="search-form">
+          <div><input
+          class="form-control"
+          type="text"
+          placeholder="Search city..."
+          autocomplete="off"
+          autofocus="on"
+          id="city-input"
+          /></div>
+          <button type="submit" class="btn btn-light fas fa-search search"></button>
+        </form>
+      </div>
+      
+      <div class="row">
+      <div class="col-7"></div>
+      <button type="button" class="btn btn-link" id="location">Location📍</button>  
+		</div>
+
+</br>
+    <h1 id="city">City</h1>
+  </br>   
+   <p id="date">Date</p> 
+  </br>  
+
+    <div class="row">
+        <img class="col-4" src="images/white.jpg" alt="rain drops">
+        <div class="col-4 temperature" id="temperature">0</div>
+        <img class="col-4" src="images/white.jpg" alt="wind">
+    </div>
+    <div class="row">
+        <div class="col-4" id="description">Weather</div>
+        <div class="col-4">...</div>
+        <div class="col-4"><span id="wind">25</span> km/hr</div>
+		</div>
+		<a href="#" id="celsius-link">ºC</a> | 
+		<a href="#" id="farenheit-link">ºF</a>
+  </br>    
+  </br>
+  <div class="row weather-details">
+    <div class="col-4">
+        <div class="card bg-light border-light">
+        <div class="card-body" id="pressure">
+         Low
+        </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="card bg-light border-light">
+        <div class="card-body">
+         <span id="min"></span>º
+        </div>
+        </div>
+    </div>
+<div class="col-2">
+        <div class="card bg-light border-light">
+        <div class="card-body">
+         <span id="max"></span>º
+        </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div  class= "card bg-light border-light"style="max-height: 100%">
+        <div class="card-body">
+        <span id="humidity"> </span>%
+        </div>
+        </div>
+    </div>
+  </div>
+    
+    <div class="row">
+        <div class="col-4">Pressure</div>
+        <div class="col-2">Min</div>
+        <div class="col-2">Max</div>
+        <div class="col-4">Humidity</div>
+    </div>
+  </br>
+    <div class="row">
+      <div class="col-sm">
+          <div class="card">
+          <img src="images/white.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <p class="card-text">21°</p>
+          </div>
+          </div>  
+      </div>
+      <div class="col-sm">
+          <div class="card">
+          <img src="images/white.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <p class="card-text">22°</p>
+          </div>
+          </div>
+      </div>
+      <div class="col-sm">
+          <div class="card">
+          <img src="images/white.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <p class="card-text">23°</p>
+          </div>
+          </div>
+      </div>
+      <div class="col-sm">
+          <div class="card">
+          <img src="images/white.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <p class="card-text">24°</p>
+          </div>
+          </div>
+      </div>
+      <div class="col-sm">
+          <div class="card">
+          <img src="images/white.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <p class="card-text">25°</p>
+          </div>
+          </div>
+      </div>
+    </div>  
+    <div class="row">
+        <div class="col-sm">Thursday</div>
+        <div class="col-sm">Friday</div>
+        <div class="col-sm">Saturday</div>
+        <div class="col-sm">Sunday</div>
+        <div class="col-sm">Monday</div>
+      </div>
+    
+</div>    
+<script type="text/javascript" src="src/app.js"></script>
+</body>
+</html>
