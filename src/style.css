@@ -26,3 +26,9 @@ h2 {
   font-size: 70px;
   text-align: center;
 }
+.reference {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
