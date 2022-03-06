@@ -10,7 +10,7 @@ h2 {
   border: 1px solid #dadde1;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px auto;
+  margin: 10px auto;
   box-shadow: 0px 3px 10px 8px #f2f3f4;
 }
 .bars {
@@ -22,10 +22,20 @@ h2 {
   padding: 10px 8px;
   font-size: 20px;
 }
+.date {
+  margin: 0px;
+}
 .temperature {
   font-size: 70px;
   text-align: center;
 }
+.pressure,
+.min,
+.max,
+.humidity {
+  padding: 10px;
+}
+
 .reference {
   font-size: 14px;
   display: block;
