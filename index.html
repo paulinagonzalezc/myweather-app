@@ -14,27 +14,26 @@
 <div class="container">
     <div class="row">
         <i type="button" class="col-7 fas fa-bars bars"></i>
-        <form class="form-inline" id="search-form">
-          <div><input
+        <form class="col-5 form-inline" id="search-form">
+          <div class="input-group"><input
           class="form-control"
           type="text"
           placeholder="Search city..."
           autocomplete="off"
           autofocus="on"
           id="city-input"
-          /></div>
-          <button type="submit" class="btn btn-light fas fa-search search"></button>
+          />   <button type="submit" class="btn btn-light fas fa-search search"></button></div>
         </form>
-      </div>
+    </div>
       
-      <div class="row">
+    <div class="row">
       <div class="col-7"></div>
-      <button type="button" class="btn btn-link" id="location">Location📍</button>  
+      <button type="button" class="col-4 btn btn-link location" id="location">Location📍</button>  
 		</div>
 
-</br>
     <h1 id="city">City</h1>
    <p id="date" class="date">Date</p> 
+</br>
 </br>
 </br>
 </br>
@@ -43,14 +42,13 @@
         <div class="col-4 temperature" id="temperature">0</div>
         <img class="col-4" src="..." alt="wind">
     </div>
-    <div class="row">
-        <div class="col-4" id="description">Weather</div>
-        <div class="col-4">...</div>
+    <div class="row weather-labels">
+        <div class="col-4" id="description">Weather</div>	
+        <a class="col-2" href="#" id="celsius-link">ºC</a>
+		    <a class="col-2" href="#" id="farenheit-link">ºF</a>
         <div class="col-4"><span id="wind">25</span> km/hr</div>
 		</div>
-		<a href="#" id="celsius-link">ºC</a> | 
-		<a href="#" id="farenheit-link">ºF</a>
-  </br>    
+   
   </br>
   <div class="row weather-details">
     <div class="col-4">
@@ -83,7 +81,7 @@
     </div>
   </div>
     
-    <div class="row">
+    <div class="row weather-tags">
         <div class="col-4">Pressure</div>
         <div class="col-2">Min</div>
         <div class="col-2">Max</div>
@@ -94,7 +92,7 @@
       <div class="col-sm">
           <div class="card">
           <img src="images/white.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body day-1">
           <p class="card-text">21°</p>
           </div>
           </div>  
@@ -102,7 +100,7 @@
       <div class="col-sm">
           <div class="card">
           <img src="images/white.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body day-2">
           <p class="card-text">22°</p>
           </div>
           </div>
@@ -110,7 +108,7 @@
       <div class="col-sm">
           <div class="card">
           <img src="images/white.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body day-3">
           <p class="card-text">23°</p>
           </div>
           </div>
@@ -118,7 +116,7 @@
       <div class="col-sm">
           <div class="card">
           <img src="images/white.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body day-4">
           <p class="card-text">24°</p>
           </div>
           </div>
@@ -126,13 +124,13 @@
       <div class="col-sm">
           <div class="card">
           <img src="images/white.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body day-5">
           <p class="card-text">25°</p>
           </div>
           </div>
       </div>
     </div>  
-    <div class="row">
+    <div class="row days">
         <div class="col-sm">Thursday</div>
         <div class="col-sm">Friday</div>
         <div class="col-sm">Saturday</div>

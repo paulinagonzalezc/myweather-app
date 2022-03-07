@@ -23,22 +23,34 @@ h2 {
   font-size: 30px;
 }
 .search {
-  padding: 10px 8px;
+  padding: 8px;
   font-size: 20px;
+}
+.location {
+  font-size: smaller;
 }
 .date {
   margin: 0px;
+  color: gray;
+  font-size: smaller;
 }
 .temperature {
   font-size: 70px;
   text-align: center;
 }
-
+.weather-labels {
+  font-size: smaller;
+  color: gray;
+}
 .pressure,
 .min,
 .max,
 .humidity {
-  padding: 10px;
+  padding: 7px;
+}
+.weather-tags {
+  font-size: smaller;
+  color: gray;
 }
 
 .reference {
@@ -46,4 +58,16 @@ h2 {
   display: block;
   text-align: center;
   padding: 10px;
+}
+.day-1,
+.day-2,
+.day-3,
+.day-4,
+.day-5 {
+  padding: 10px;
+}
+
+.days {
+  font-size: smaller;
+  color: gray;
 }
