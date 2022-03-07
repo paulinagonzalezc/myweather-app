@@ -28,8 +28,6 @@ let now = new Date();
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formatDate(now);
 
-//---------------
-
 function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -60,7 +58,6 @@ function searchCity(city) {
 }
 
 function handleSubmit(event) {
-  debugger;
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
   searchCity(city);

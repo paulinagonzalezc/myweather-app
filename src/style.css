@@ -4,6 +4,10 @@ h1 {
 h2 {
   text-align: center;
 }
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 .container {
   text-align: center;
   width: 700px;
@@ -29,6 +33,7 @@ h2 {
   font-size: 70px;
   text-align: center;
 }
+
 .pressure,
 .min,
 .max,
