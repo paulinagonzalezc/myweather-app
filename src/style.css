@@ -24,7 +24,9 @@ h2 {
 }
 .search {
   padding: 8px;
-  font-size: 20px;
+}
+.form-control {
+  font-size: smaller;
 }
 .location {
   font-size: smaller;
