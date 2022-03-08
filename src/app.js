@@ -45,6 +45,8 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
   console.log(response);
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -81,15 +83,25 @@ form.addEventListener("submit", handleSubmit);
 let locationButton = document.querySelector("#location");
 locationButton.addEventListener("click", getLocation);
 
+//fahrenheit
 function displayFahrenheit(event) {
   event.preventDefault();
-  let fahrenheitTemp = (14 * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
-//let celsiusTemperature = null;
+
+function displayCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
 
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsius);
 searchCity("New York");
