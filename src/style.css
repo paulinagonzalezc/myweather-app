@@ -40,6 +40,15 @@ h2 {
   font-size: 70px;
   text-align: center;
 }
+
+.scale .active {
+  color: gray;
+  cursor: default;
+}
+
+.scale .active:hover {
+  text-decoration: none;
+}
 .weather-labels {
   font-size: smaller;
   color: gray;
