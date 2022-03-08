@@ -1,5 +1,3 @@
-//In your project, display the current date and time using JavaScript: Tuesday 16:00
-// Challenge 1 HW 4
 function formatDate(date) {
   let hour = date.getHours();
   if (hour < 10) {
@@ -63,7 +61,6 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-//Location
 function searchPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
@@ -83,5 +80,16 @@ form.addEventListener("submit", handleSubmit);
 
 let locationButton = document.querySelector("#location");
 locationButton.addEventListener("click", getLocation);
+
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+//let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 searchCity("New York");
