@@ -35,6 +35,9 @@ h2 {
   color: gray;
   font-size: smaller;
 }
+.icon {
+  size: 10px;
+}
 .temperature {
   font-size: 70px;
   text-align: center;

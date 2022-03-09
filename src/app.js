@@ -39,12 +39,17 @@ function displayWeatherCondition(response) {
     response.data.main.temp_max
   );
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
-  console.log(response);
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   );
-
   celsiusTemperature = response.data.main.temp;
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  console.log(response);
 }
 
 function searchCity(city) {
