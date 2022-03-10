@@ -93,7 +93,9 @@ h2 {
 .day-5 {
   padding: 10px;
 }
-
+.fore-min {
+  opacity: 0.5;
+}
 .days {
   font-size: smaller;
   color: gray;
