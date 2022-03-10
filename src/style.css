@@ -49,15 +49,23 @@ h2 {
 
 .drops {
   padding-right: 0px;
+
+  max-width: 9%;
+  height: 9%;
 }
 .humid {
   padding-left: 0px;
 }
 .wind {
   padding-right: 0px;
+  max-width: 9%;
+  height: 9%;
 }
 .vel {
   padding-left: 0px;
+}
+.km {
+  font-size: smaller;
 }
 .scale .active {
   color: gray;
