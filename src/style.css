@@ -46,23 +46,13 @@ h2 {
 .symbol {
   font-size: 70px;
 }
-
-.drops {
-  padding-right: 0px;
-
-  max-width: 9%;
-  height: 9%;
-}
-.humid {
-  padding-left: 0px;
-}
+.drops,
 .wind {
-  padding-right: 0px;
-  max-width: 9%;
-  height: 9%;
-}
-.vel {
-  padding-left: 0px;
+  max-width: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .km {
   font-size: smaller;
