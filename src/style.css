@@ -46,6 +46,19 @@ h2 {
 .symbol {
   font-size: 70px;
 }
+
+.drops {
+  padding-right: 0px;
+}
+.humid {
+  padding-left: 0px;
+}
+.wind {
+  padding-right: 0px;
+}
+.vel {
+  padding-left: 0px;
+}
 .scale .active {
   color: gray;
   cursor: default;

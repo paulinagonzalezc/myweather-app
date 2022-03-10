@@ -15,7 +15,8 @@
     <div class="row">
         <i type="button" class="col-8 fas fa-bars bars"></i>
         <form class="col-4 form-inline" id="search-form">
-          <div class="input-group"><input
+          <div class="input-group">
+          <input
           class="form-control"
           type="text"
           placeholder="Search city..."
@@ -32,7 +33,7 @@
 		</div>
 
     <h1 id="city">City</h1>
-   <p id="date" class="date">Date</p> 
+       <p id="date" class="date">Date</p> 
        <img src="..." id="icon" class="icon"/>
   
       <div class="row">
@@ -42,20 +43,20 @@
       </div>
 
       <div class="row">
-       <div class="col-2">ic</div>
-       <div class="col-2">10%</div>
-       <div class="col-4"></div>
-       <div class="col-2">ic</div>
-       <div class="col-2">4</div>
+        <img src="images/water-drops.png" class="col-2 drops"/>
+        <div class="col-2 humid"><span id="humidity">25</span>%</div>
+        <div class="col-4"></div>
+        <img src="images/wind.png" class="col-2 wind"/>
+        <div class="col-2 vel"><span id="wind">25</span> km/hr</div>
       </div>
-      
+        
       <div class="row weather-labels">
-        <div class="col-4" id="description">Weather</div>	
+        <div class="col-4">Humidity</div>	
         <div class="col-4 scale">
           <span><a href="#" id="celsius-link" class="active">ºC</a></span> |
           <span><a href="#" id="fahrenheit-link">ºF</a></span>
         </div>
-        <div class="col-4"><span id="wind">25</span> km/hr</div>
+        <div class="col-4">Wind</div>
 		</div>
    
   </br>
@@ -84,7 +85,7 @@
     <div class="col-4 ">
         <div  class= "card bg-light border-light rounded-pill"style="max-height:100%">
         <div class="card-body humidity">
-        <span id="humidity"> </span>%
+        <div id="description"> </div>
         </div>
         </div>
     </div>
@@ -94,7 +95,7 @@
         <div class="col-4">Pressure</div>
         <div class="col-2">Min</div>
         <div class="col-2">Max</div>
-        <div class="col-4">Humidity</div>
+        <div class="col-4">Condition</div>
     </div>
   </br>
     <div class="row">
@@ -149,7 +150,6 @@
     
     </div>  
     <div class="reference"> <a href="https://github.com/paulinagonzalezc/myweather-app">Open-source code</a> by Paulina Gonzalez</div>
-    
     <script type="text/javascript" src="src/app.js"></script>
   </body>
 </html>
