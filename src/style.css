@@ -100,3 +100,6 @@ h2 {
   font-size: smaller;
   color: gray;
 }
+.card-body {
+  padding: 10px;
+}
