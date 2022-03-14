@@ -48,11 +48,12 @@ h2 {
 }
 .drops,
 .wind {
-  max-width: 10%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 35px;
+  padding-right: 0px;
+}
+.humid,
+.vel {
+  padding-left: 0px;
 }
 .km {
   font-size: smaller;
