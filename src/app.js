@@ -40,12 +40,12 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
         <div class="col-sm">
-          <div class="card">
+          <div class="card forecast-card">
           <img src="https://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png" class="card-img-top" alt="...">
