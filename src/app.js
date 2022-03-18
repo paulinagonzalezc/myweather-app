@@ -46,9 +46,10 @@ function displayForecast(response) {
         `
         <div class="col-sm">
           <div class="card forecast-card">
-          <img src="https://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
-          }@2x.png" class="card-img-top" alt="...">
+          <img
+            src=images/${forecastDay.weather[0].icon}.png
+            class="card-img-top" width=auto
+          >
           <div class="card-body day-1">
             <p class="card-text weather-forecast-temperatures">
             <span class="fore-max">${Math.round(forecastDay.temp.max)}° </span>
