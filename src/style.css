@@ -50,7 +50,7 @@ h2 {
   font-size: 13px;
 }
 .icon {
-  size: 10px;
+  max-width: 120px;
 }
 .temperature {
   font-size: 70px;
