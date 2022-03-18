@@ -32,18 +32,22 @@ h2 {
   font-size: 30px;
 }
 .search {
-  padding: 8px;
+  padding: 0px 12px;
+  background: none;
+  border: 0px;
+  font-size: 20px;
 }
 .form-control {
-  font-size: smaller;
+  font-size: 13px;
+  border-radius: 6px;
 }
 .location {
-  font-size: smaller;
+  font-size: 13px;
 }
 .date {
   margin: 0px;
   color: gray;
-  font-size: smaller;
+  font-size: 13px;
 }
 .icon {
   size: 10px;
@@ -69,7 +73,7 @@ h2 {
   padding-left: 0px;
 }
 .km {
-  font-size: smaller;
+  font-size: 13px;
 }
 .scale .active {
   color: gray;
@@ -80,18 +84,19 @@ h2 {
   text-decoration: none;
 }
 .weather-labels {
-  font-size: smaller;
+  font-size: 13px;
   color: gray;
 }
 .pressure,
 .min,
 .max,
 .humidity {
-  padding: 7px;
+  padding: 8px;
+  font-size: 14px;
 }
 
 .weather-tags {
-  font-size: smaller;
+  font-size: 13px;
   color: gray;
 }
 
@@ -112,12 +117,10 @@ h2 {
   opacity: 0.5;
 }
 .days {
-  font-size: smaller;
+  font-size: 13px;
   color: gray;
 }
-.card-body {
-  padding: 10px;
-}
+
 .forecast-card {
   background-color: white;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.02), 0 8px 6px rgba(0, 0, 0, 0.03),
