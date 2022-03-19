@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="src/style.css">
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://kit.fontawesome.com/241146ce0a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@450&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/241146ce0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@450&display=swap"
+      rel="stylesheet"
+    />
   </head>
-<body>
-<div class="container">
-    <div class="row">
+  <body>
+    <div class="container">
+      <div class="row">
         <i type="button" class="col-8 fas fa-bars bars"></i>
         <form class="col-4 form-inline" id="search-form">
           <div class="input-group">
-          <input
-          class="form-control"
-          type="text"
-          placeholder="Search city..."
-          autocomplete="off"
-          autofocus="on"
-          id="city-input"
-          />   <button type="submit" class="btn btn-light fas fa-search search"></button></div>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search city..."
+              autocomplete="off"
+              autofocus="on"
+              id="city-input"
+            />
+            <button
+              type="submit"
+              class="btn btn-light fas fa-search search"
+            ></button>
+          </div>
         </form>
-    </div>
-      
-    <div class="row">
-      <div class="col-8"></div>
-      <button type="button" class="col-4 btn btn-link location" id="location">Location📍</button>  
-		</div>
+      </div>
 
-    <h1 id="city">City</h1>
-       <p id="date" class="date">Date</p> 
-       <img src="" id="icon" class="icon"/>
-  
       <div class="row">
-       <div class="col-4"></div>
-       <div class="col-4"><span class="temperature" id="temperature"></span><span class="symbol">º</span></div>
-       <div class="col-4"></div>
+        <div class="col-8"></div>
+        <button type="button" class="col-4 btn btn-link location" id="location">
+          Location📍
+        </button>
+      </div>
+
+      <h1 id="city">City</h1>
+      <p id="date" class="date">Date</p>
+      <img src="" id="icon" class="icon" />
+
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <span class="temperature" id="temperature"></span
+          ><span class="symbol">º</span>
+        </div>
+        <div class="col-4"></div>
       </div>
 
       <div class="row">
         <div class="col-2 drop-col">
-          <img src="images/droplet.png" class="drops" width="35%"/>
+          <img src="images/droplet.png" class="drops" width="35%" />
         </div>
         <div class="col-2 humid"><span id="humidity">25</span>%</div>
         <div class="col-4"></div>
         <div class="col-2 wind-col">
-          <img src="images/wind.png" class="wind" width="50%"/>
+          <img src="images/wind.png" class="wind" width="50%" />
         </div>
-        <div class="col-2 vel"><span id="wind">25</span><span class="km"> km/hr</span></div>
+        <div class="col-2 vel">
+          <span id="wind">25</span><span class="km"> km/hr</span>
+        </div>
       </div>
-        
+
       <div class="row weather-labels">
-        <div class="col-4">Humidity</div>	
+        <div class="col-4">Humidity</div>
         <div class="col-4 scale">
           <span><a href="#" id="celsius-link" class="active">ºC</a></span> |
           <span><a href="#" id="fahrenheit-link">ºF</a></span>
         </div>
         <div class="col-4">Wind</div>
-		</div>
+      </div>
 
-  <div class="row weather-details">
-    <div class="col-4">
-        <div class="card bg-light border-light rounded-pill">
-        <div class="card-body pressure" id="pressure">
-         Low
+      <div class="row weather-details">
+        <div class="col-4">
+          <div class="card bg-light border-light rounded-pill">
+            <div class="card-body pressure" id="pressure">Low</div>
+          </div>
         </div>
+        <div class="col-2">
+          <div class="card bg-light border-light rounded-pill">
+            <div class="card-body max"><span id="max"></span>º</div>
+          </div>
         </div>
-    </div>
-    <div class="col-2">
-            <div class="card bg-light border-light rounded-pill">
-            <div class="card-body max">
-             <span id="max"></span>º
+        <div class="col-2">
+          <div class="card bg-light border-light rounded-pill">
+            <div class="card-body min"><span id="min"></span>º</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card bg-light border-light rounded-pill">
+            <div class="card-body humidity">
+              <div id="description"></div>
             </div>
-            </div>
+          </div>
         </div>
-    <div class="col-2">
-        <div class="card bg-light border-light rounded-pill">
-        <div class="card-body min">
-         <span id="min"></span>º
-        </div>
-        </div>
-    </div>
-    <div class="col-4 ">
-        <div  class= "card bg-light border-light rounded-pill">
-        <div class="card-body humidity">
-        <div id="description"> </div>
-        </div>
-        </div>
-    </div>
-  </div>
-    
-  <div class="row weather-tags">
+      </div>
+
+      <div class="row weather-tags">
         <div class="col-4">Pressure</div>
         <div class="col-2">Max</div>
         <div class="col-2">Min</div>
         <div class="col-4">Condition</div>
-  </div>
-  </br>
-    
-  <div class="weather-forecast" id="forecast"></div>
+      </div>
 
-  </div>  
-  <div class="reference"> <a href="https://github.com/paulinagonzalezc/myweather-app">Open-source code</a> by Paulina Gonzalez</div>
-  <script type="text/javascript" src="src/app.js"></script>
+      <div class="weather-forecast" id="forecast"></div>
+    </div>
+    <div class="reference">
+      <a href="https://github.com/paulinagonzalezc/myweather-app"
+        >Open-source code</a
+      >
+      by Paulina Gonzalez
+    </div>
+    <script type="text/javascript" src="src/app.js"></script>
   </body>
 </html>
-

@@ -100,9 +100,6 @@ function displayWeatherCondition(response) {
     .querySelector("#icon")
     .setAttribute("src", `images/${response.data.weather[0].icon}.png`);
 
-  console.log(response.data.weather[0].icon);
-  console.log(response);
-
   getForecast(response.data.coord);
 }
 
@@ -164,4 +161,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsius);
 
-searchCity("New York");
+searchCity("monterrey");
