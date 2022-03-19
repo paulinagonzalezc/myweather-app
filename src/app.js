@@ -48,11 +48,11 @@ function displayForecast(response) {
           <div class="card forecast-card">
           <img
             src=images/${forecastDay.weather[0].icon}.png
-            class="card-img-top" width=auto
+            class="card-img-top" 
           >
           <div class="card-body day-1">
             <p class="card-text weather-forecast-temperatures">
-            <span class="fore-max">${Math.round(forecastDay.temp.max)}° </span>
+            <span class="fore-max">${Math.round(forecastDay.temp.max)}º </span>
               <span class="fore-min">${Math.round(forecastDay.temp.min)}º</span>
               </p>
           </div>

@@ -46,13 +46,13 @@
       </div>
 
       <div class="row">
-        <div class="col-2">
-          <img src="images/water-drops.png" class="drops"/>
+        <div class="col-2 drop-col">
+          <img src="images/droplet.png" class="drops" width="35%"/>
         </div>
         <div class="col-2 humid"><span id="humidity">25</span>%</div>
         <div class="col-4"></div>
-        <div class="col-2">
-          <img src="images/wind.png" class="wind"/>
+        <div class="col-2 wind-col">
+          <img src="images/wind.png" class="wind" width="50%"/>
         </div>
         <div class="col-2 vel"><span id="wind">25</span><span class="km"> km/hr</span></div>
       </div>
@@ -65,27 +65,26 @@
         </div>
         <div class="col-4">Wind</div>
 		</div>
-   
-  </br>
+
   <div class="row weather-details">
     <div class="col-4">
-        <div class="card bg-light border-light rounded-pill border border-3 border-primary">
+        <div class="card bg-light border-light rounded-pill">
         <div class="card-body pressure" id="pressure">
          Low
         </div>
         </div>
     </div>
     <div class="col-2">
+            <div class="card bg-light border-light rounded-pill">
+            <div class="card-body max">
+             <span id="max"></span>º
+            </div>
+            </div>
+        </div>
+    <div class="col-2">
         <div class="card bg-light border-light rounded-pill">
         <div class="card-body min">
          <span id="min"></span>º
-        </div>
-        </div>
-    </div>
-<div class="col-2">
-        <div class="card bg-light border-light rounded-pill">
-        <div class="card-body max">
-         <span id="max"></span>º
         </div>
         </div>
     </div>
@@ -100,8 +99,8 @@
     
   <div class="row weather-tags">
         <div class="col-4">Pressure</div>
-        <div class="col-2">Min</div>
         <div class="col-2">Max</div>
+        <div class="col-2">Min</div>
         <div class="col-4">Condition</div>
   </div>
   </br>
